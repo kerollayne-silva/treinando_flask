@@ -18,8 +18,8 @@ def create_task():
   print(tasks)
 
   return {
-    'message': 'Task created successfully',
-  }, 201
+    'message': 'Task created successfully', 'id': new_task.id
+  }, 200
 
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
